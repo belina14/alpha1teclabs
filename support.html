@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support - Alpha1 Tec Labs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="support-page">
+ 
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="alpha1-nav-logo.png" alt="Alpha1 Tec Labs" class="nav-logo">
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="hosting.html">Hosting</a>
+        <a href="domains.html">Domains</a>
+        <a href="service.html">Service</a>
+        <a href="support.html" class="active">Support</a>
+        <a href="contact.html">Contact</a>
+        <a href="get-started.html" class="nav-btn">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  
+  <section class="support-hero">
+    <div class="support-hero-inner">
+      <h1>Support Center</h1>
+      <p>Find answers fast, browse guides, or submit a ticket to our support team.</p>
+
+      
+    </div>
+  </section>
+
+  <main class="support-wrap">
+
+    <section class="support-it">
+  <div class="support-section-head">
+  <h2>IT Support</h2>
+  <p>PC & server remote support assistance, troubleshooting, and IT outsourcing/consultancy.</p>
+</div>
+
+
+    <div class="support-it-grid">
+      <div class="support-it-card">
+        <h3>Remote PC Support</h3>
+        <p>
+          Get help for software, hardware, and general PC issues via secure remote assistance.
+        </p>
+      </div>
+
+      <div class="support-it-card">
+        <h3>Server Remote Support</h3>
+        <p>
+          Professional support for server-related troubleshooting and maintenance.
+        </p>
+      </div>
+
+      <div class="support-it-card">
+        <h3>Evening & Weekend Help</h3>
+        <p>
+          Online technical assistance when you need it most — including evenings and weekends.
+        </p>
+      </div>
+
+      <div class="support-it-card">
+        <h3>IT Outsourcing & Consultancy</h3>
+        <p>
+          Outsource your IT requirements or request tailored consultancy for your setup.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="support-section" id="faq">
+<div class="support-section-head">
+  <h2>Frequently Asked Questions</h2>
+  <p>Quick answers to common questions.</p>
+</div>
+
+
+
+      <div class="support-faq">
+        <details class="support-faq-item">
+          <summary>
+            <span>How to buy hosting?</span>
+            <span class="support-chev" aria-hidden="true">▾</span>
+          </summary>
+          <div class="support-faq-body">
+            Go to <strong>Hosting</strong>, choose the package you want, then click <strong>Order Now</strong>.
+            You can also start from <strong>Get Started</strong> and pick a plan there.
+          </div>
+        </details>
+
+        <details class="support-faq-item">
+          <summary>
+            <span>How do I register a domain?</span>
+            <span class="support-chev" aria-hidden="true">▾</span>
+          </summary>
+          <div class="support-faq-body">
+            Open the <strong>Domains</strong> page, search for your name, and choose an available extension.
+          </div>
+        </details>
+
+        <details class="support-faq-item">
+          <summary>
+            <span>Do you provide 24/7 support?</span>
+            <span class="support-chev" aria-hidden="true">▾</span>
+          </summary>
+          <div class="support-faq-body">
+            Yes — you can submit a ticket anytime and we’ll respond as quickly as possible.
+          </div>
+        </details>
+
+        <details class="support-faq-item">
+          <summary>
+            <span>Can you help migrate my website or email?</span>
+            <span class="support-chev" aria-hidden="true">▾</span>
+          </summary>
+          <div class="support-faq-body">
+            Yes. Submit a ticket and include your current provider and what you want moved (website/email/both).
+          </div>
+        </details>
+      </div>
+    </section>
+  
+    <section class="support-section" id="submit-ticket">
+      <div class="support-grid">
+        <div class="support-card">
+          <h2 class="support-card-title">Contact Support</h2>
+          <p class="support-card-text">Need help from a real human? Submit a ticket and our team will reach out.</p>
+
+          <form class="support-form" id="supportTicketForm" novalidate>
+            <div class="support-row-2">
+              <div class="support-field">
+                <label for="supName">Name <span class="support-required">*</span></label>
+                <input id="supName" name="name" type="text" placeholder="John Doe" required>
+              </div>
+
+              <div class="support-field">
+                <label for="supEmail">Email <span class="support-required">*</span></label>
+                <input id="supEmail" name="email" type="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="support-field">
+              <label for="supTopic">Topic</label>
+              <select id="supTopic" name="topic">
+                <option value="Hosting">Hosting</option>
+                <option value="Domains">Domains</option>
+                <option value="Billing">Billing</option>
+                <option value="Technical">Technical</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="support-field">
+              <label for="supMsg">Message <span class="support-required">*</span></label>
+              <textarea id="supMsg" name="message" placeholder="Describe your issue..." required></textarea>
+            </div>
+
+            <button type="submit" class="support-submit">Submit Ticket</button>
+          </form>
+        </div>
+
+        <aside class="support-side">
+          <div class="support-info-card">
+            <div class="support-info-title">Response Time</div>
+            <div class="support-info-text">Most tickets receive a reply within 24 hours.</div>
+          </div>
+
+          <div class="support-info-card">
+            <div class="support-info-title">Helpful Tip</div>
+            <div class="support-info-text">Include screenshots or error messages for faster help.</div>
+          </div>
+
+          <div class="support-info-card">
+            <div class="support-info-title">Quick Links</div>
+            <div class="support-info-text">
+              <a href="hosting.html">Hosting</a> ·
+              <a href="domains.html">Domains</a> ·
+              <a href="get-started.html">Get Started</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="support-toast" id="supportToast" role="status" aria-live="polite" aria-atomic="true" hidden>
+        <span class="support-toast-dot" aria-hidden="true">!</span>
+        <span id="supportToastText">Message</span>
+      </div>
+    </section>
+
+    
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="footer-brand" href="index.html">Alpha1TecLabs</a>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Services</h3>
+          <ul class="footer-links">
+            <li><a href="hosting.html">Web Hosting</a></li>
+            <li><a href="domains.html">Domain Registration</a></li>
+            <li><a href="service.html">Web Design</a></li>
+            <li><a href="service.html">Remote Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Support</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="get-started.html">Get Started</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Contact</h3>
+          <ul class="footer-contact">
+            <li>Alpha1TecLabs Bristol UK ISP - ATW ISP - Alan T Williams - ATW IP</li>
+            <li>+44(0)117 9712 641</li>
+            <li><a href="support@alpha1teclabs.com">support@alpha1teclabs.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 Alpha1TecLabs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="support.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

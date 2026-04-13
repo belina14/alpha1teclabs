@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Started - Alpha1 Tec Labs</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+
+<body class="gs-body">
+  
+ <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <img src="alpha1-nav-logo.png" alt="Alpha1 Tec Labs" class="nav-logo">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="hosting.html">Hosting</a>
+      <a href="domains.html">Domains</a>
+      <a href="service.html">Service</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact</a>
+      <a href="get-started.html" class="nav-btn active">Get Started</a>
+    </div>
+  </nav>
+</header>
+
+
+
+  <main class="gs-page">
+    <section class="gs-hero">
+      <h1>Get Started</h1>
+      <p>Join Alpha1TecLabs in just a few simple steps</p>
+    </section>
+
+    
+    <section class="gs-stepper-wrap" aria-label="Progress">
+      <div class="gs-stepper" role="list">
+        <div class="gs-step" role="listitem">
+          <div class="gs-circle gs-circle-active" data-step-circle="1">1</div>
+        </div>
+
+        <div class="gs-line" data-step-line="1"></div>
+
+        <div class="gs-step" role="listitem">
+          <div class="gs-circle gs-circle-muted" data-step-circle="2">2</div>
+        </div>
+
+        <div class="gs-line" data-step-line="2"></div>
+
+        <div class="gs-step" role="listitem">
+          <div class="gs-circle gs-circle-muted" data-step-circle="3">3</div>
+        </div>
+      </div>
+
+      <div class="gs-step-labels">
+        <div class="gs-step-label gs-step-label-active" data-step-label="1">Choose Plan</div>
+        <div class="gs-step-label" data-step-label="2">Account Details</div>
+        <div class="gs-step-label" data-step-label="3">Confirmation</div>
+      </div>
+    </section>
+
+   
+    <section class="gs-section" id="gsStep1" data-step-section="1">
+      <h2 class="gs-title">Select Your Plan</h2>
+      <p class="gs-subtitle">Choose the plan that best fits your needs</p>
+
+      <div class="gs-plan-grid" role="list">
+        <button class="gs-plan-card" type="button" role="listitem"
+                data-plan="Starter" data-price="£4.99/mo">
+          <div class="gs-plan-head">
+            <h3>Starter</h3>
+            <div class="gs-price">£4.99/mo</div>
+          </div>
+          <ul class="gs-features">
+            <li><span class="gs-check">✓</span> Email Accounts</li>
+            <li><span class="gs-check">✓</span> 5 GB Storage</li>
+            <li><span class="gs-check">✓</span> Free SSL</li>
+          </ul>
+        </button>
+
+        <button class="gs-plan-card gs-plan-popular" type="button" role="listitem"
+                data-plan="Professional" data-price="£9.99/mo">
+          <div class="gs-badge">Popular</div>
+          <div class="gs-plan-head">
+            <h3>Professional</h3>
+            <div class="gs-price">£9.99/mo</div>
+          </div>
+          <ul class="gs-features">
+            <li><span class="gs-check">✓</span> Unlimited Storage</li>
+            <li><span class="gs-check">✓</span> Free SSL</li>
+            <li><span class="gs-check">✓</span> Priority Support</li>
+          </ul>
+        </button>
+
+        <button class="gs-plan-card" type="button" role="listitem"
+                data-plan="Enterprise" data-price="£24.99/mo">
+          <div class="gs-plan-head">
+            <h3>Enterprise</h3>
+            <div class="gs-price">£24.99/mo</div>
+          </div>
+          <ul class="gs-features">
+            <li><span class="gs-check">✓</span> Unlimited Emails</li>
+            <li><span class="gs-check">✓</span> 20 GB Storage</li>
+            <li><span class="gs-check">✓</span> Free SSL</li>
+          </ul>
+        </button>
+      </div>
+
+      <div class="gs-actions gs-actions-right">
+        <button class="gs-btn gs-btn-primary" id="gsContinue1" type="button">
+          Continue <span class="gs-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    
+    <section class="gs-section" id="gsStep2" data-step-section="2" hidden>
+      <h2 class="gs-title">Account Details</h2>
+      <p class="gs-subtitle">Enter your information to create your account</p>
+
+      <form class="gs-form" id="gsForm" novalidate>
+        <div class="gs-grid-2">
+          <div class="gs-field">
+            <label for="firstName">First Name <span class="gs-required">*</span></label>
+            <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+          </div>
+
+          <div class="gs-field">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" autocomplete="family-name" />
+          </div>
+        </div>
+
+        <div class="gs-field">
+          <label for="email">Email Address <span class="gs-required">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+
+        <div class="gs-field">
+          <label for="company">Company (Optional)</label>
+          <input id="company" name="company" type="text" autocomplete="organization" />
+        </div>
+
+        <div class="gs-actions gs-actions-split">
+          <button class="gs-btn gs-btn-ghost" id="gsBack2" type="button">
+            <span class="gs-arrow-left" aria-hidden="true">←</span> Back
+          </button>
+
+          <button class="gs-btn gs-btn-primary" id="gsContinue2" type="button">
+            Continue <span class="gs-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    
+    <section class="gs-section" id="gsStep3" data-step-section="3" hidden>
+      <div class="gs-confirm-icon" aria-hidden="true">✓</div>
+      <h2 class="gs-title">Confirm Your Order</h2>
+      <p class="gs-subtitle">Review your selection before completing</p>
+
+      <div class="gs-summary">
+        <div class="gs-summary-row">
+          <div class="gs-summary-label">Plan</div>
+          <div class="gs-summary-value" id="sumPlan">—</div>
+        </div>
+        <div class="gs-summary-row">
+          <div class="gs-summary-label">Price</div>
+          <div class="gs-summary-value" id="sumPrice">—</div>
+        </div>
+
+        <div class="gs-summary-sep"></div>
+
+        <div class="gs-summary-row">
+          <div class="gs-summary-label">Name</div>
+          <div class="gs-summary-value" id="sumName">—</div>
+        </div>
+        <div class="gs-summary-row">
+          <div class="gs-summary-label">Email</div>
+          <div class="gs-summary-value" id="sumEmail">—</div>
+        </div>
+      </div>
+
+      <div class="gs-actions gs-actions-split">
+        <button class="gs-btn gs-btn-ghost" id="gsBack3" type="button">
+          <span class="gs-arrow-left" aria-hidden="true">←</span> Back
+        </button>
+
+        <button class="gs-btn gs-btn-primary" id="gsComplete" type="button">
+          Complete Order <span class="gs-checkmark" aria-hidden="true">✓</span>
+        </button>
+      </div>
+    </section>
+
+    
+    <div class="gs-toast" id="gsToast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <span class="gs-toast-dot" aria-hidden="true">!</span>
+      <span id="gsToastText">Message</span>
+    </div>
+  </main>
+
+  
+    <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+     
+      <div class="footer-col">
+        <a class="footer-brand" href="index.html">Alpha1TecLabs</a>
+      </div>
+
+    
+      <div class="footer-col">
+        <h3 class="footer-title">Services</h3>
+        <ul class="footer-links">
+          <li><a href="hosting.html">Web Hosting</a></li>
+          <li><a href="domains.html">Domain Registration</a></li>
+          <li><a href="service.html">Web Design</a></li>
+          <li><a href="service.html">Remote Support</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-col">
+        <h3 class="footer-title">Support</h3>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="get-started.html">Get Started</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="footer-col">
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-contact">
+          <li>Alpha1TecLabs Bristol UK ISP - ATW ISP - Alan T Williams - ATW IP</li>
+          <li>+44(0)117 9712 641</li>
+          <li><a href="mailto:support@alpha1teclabs.com">support@alpha1teclabs.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">© 2026 Alpha1TecLabs. All rights reserved.</p>
+  </div>
+
+
+  </footer>
+
+  <script src="get-started.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

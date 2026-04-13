@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domains - Alpha1 Tec Labs</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+ 
+  <header>
+    <nav class="navbar">
+     <a href="index.html" class="logo-link">
+  <img src="alpha1-nav-logo.png" alt="Alpha1 Tec Labs" class="nav-logo">
+</a>
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="hosting.html">Hosting</a>
+        <a href="domains.html" class="active">Domains</a>
+        <a href="service.html">Service</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+        <a href="get-started.html" class="nav-btn">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="domains-page">
+    <section class="domains-hero">
+      <h1>Find Your Perfect Domain</h1>
+      <p>Register your domain name today with free privacy protection and DNS management</p>
+
+      <div class="domains-search-row" role="search">
+        <div class="domains-search-box">
+          <span class="domains-search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <input id="domainQuery" type="text" placeholder="Find your perfect domain name..." aria-label="Domain name search" />
+        </div>
+
+        <button id="domainSearchBtn" class="domains-search-btn" type="button">Search</button>
+      </div>
+
+      
+      <section id="domainResults" class="domains-results" aria-live="polite" hidden>
+        <h3 id="resultsTitle" class="domains-results-title">Results</h3>
+        <div id="resultsList" class="domains-results-list"></div>
+      </section>
+
+      <h3 class="domains-subtitle">Popular Extensions</h3>
+
+      <div class="domains-ext-grid" aria-label="Popular domain extensions">
+        <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".com">
+          <div class="domains-tld">.com</div>
+          <div class="domains-price">£19.54/yr</div>
+        </button>
+
+        <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".net">
+          <div class="domains-tld">.net</div>
+          <div class="domains-price">£22.99/yr</div>
+        </button>
+
+        <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".org">
+          <div class="domains-tld">.org</div>
+          <div class="domains-price">£22.99/yr</div>
+        </button>
+
+        <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".uk">
+          <div class="domains-tld">.uk</div>
+          <div class="domains-price">£5.36/yr</div>
+        </button>
+
+        <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".co.uk">
+          <div class="domains-tld">.co.uk</div>
+          <div class="domains-price">£5.36/yr</div>
+        </button>
+
+        <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".org.uk">
+          <div class="domains-tld">.org.uk</div>
+          <div class="domains-price">£5.36/yr</div>
+        </button>
+
+         <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".ltd.uk">
+          <div class="domains-tld">.ltd.uk</div>
+          <div class="domains-price">£5.36/yr</div>
+        </button>
+
+         <button class="domains-ext-card domains-ext-btn" type="button" data-preset=".plc.uk">
+          <div class="domains-tld">.plc.uk</div>
+          <div class="domains-price">£5.36/yr</div>
+        </button>
+      </div>
+    </section>
+
+    
+    <section class="domains-panel">
+      <div class="domains-panel-head">
+        <h2>Transfer Your Domain</h2>
+        <p>Move your domain to Alpha1TecLabs and enjoy premium features at no extra cost</p>
+      </div>
+
+      <div class="domains-feature-grid">
+        <div class="domains-feature">
+          <div class="domains-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M20 12a8 8 0 0 1-14.8 4M4 12a8 8 0 0 1 14.8-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 4v6h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 20v-6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Free Transfer</h3>
+          <p>No hidden fees when you transfer your domain to us</p>
+        </div>
+
+        <div class="domains-feature">
+          <div class="domains-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2 20 6v6c0 5-3.5 9.4-8 10-4.5-.6-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Free Privacy</h3>
+          <p>WHOIS privacy protection included at no extra cost</p>
+        </div>
+
+        <div class="domains-feature">
+          <div class="domains-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>1-Year Extension</h3>
+          <p>Get an extra year added to your domain registration</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="domains-panel">
+      <div class="domains-faq-head">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="domains-faq-list">
+        <details class="domains-faq-item">
+          <summary>
+            <span>How do I transfer my domain to Alpha1TecLabs?</span>
+            <span class="domains-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="domains-faq-body">
+           Transferring your domain is easy. First, unlock your domain at your current registrar and get the authorization code. Then, initiate the transfer from your Alpha1TecLabs dashboard and enter the code. The transfer usually completes within 5-7 days.
+          </div>
+        </details>
+
+        <details class="domains-faq-item">
+          <summary>
+            <span>What's included with domain registration?</span>
+            <span class="domains-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="domains-faq-body">
+            All domain registrations include free WHOIS privacy protection, DNS management, domain forwarding, and 24/7 support. You also get free email forwarding with up to 100 aliases.
+          </div>
+        </details>
+
+        <details class="domains-faq-item">
+          <summary>
+            <span>Can I register a domain without hosting?</span>
+            <span class="domains-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="domains-faq-body">
+            Yes! You can register a domain without purchasing hosting. You can use our DNS management tools to point your domain anywhere, or add hosting later when you're ready.
+          </div>
+        </details>
+
+        <details class="domains-faq-item">
+          <summary>
+            <span>How long does domain registration take?</span>
+            <span class="domains-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="domains-faq-body">
+            Most domain registrations are instant. Once you complete your purchase, your domain will be active and ready to use within minutes.
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+ 
+   <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      
+      <div class="footer-col">
+        <a class="footer-brand" href="index.html">Alpha1TecLabs</a>
+      </div>
+
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Services</h3>
+        <ul class="footer-links">
+          <li><a href="hosting.html">Web Hosting</a></li>
+          <li><a href="domains.html">Domain Registration</a></li>
+          <li><a href="service.html">Web Design</a></li>
+          <li><a href="service.html">Remote Support</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Support</h3>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="get-started.html">Get Started</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="footer-col">
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-contact">
+          <li>Alpha1TecLabs Bristol UK ISP - ATW ISP - Alan T Williams - ATW IP</li>
+          <li>+44(0)117 9712 641</li>
+          <li><a href="mailto:support@alpha1teclabs.com">support@alpha1teclabs.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">© 2026 Alpha1TecLabs. All rights reserved.</p>
+  </div>
+
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
