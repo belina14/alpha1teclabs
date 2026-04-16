@@ -6,8 +6,6 @@ The objective was to improve usability and navigation by focusing on user experi
 
 The website was rebuilt using HTML, CSS, and JavaScript, and deployed locally using XAMPP.
 
-![alt text](image.png)
-![alt text](image-1.png)
 Usage/n
 The interface is designed to be intuitive and easy to navigate. Users can quickly access information with minimal effort, reflecting the project's focus on usability.
 
